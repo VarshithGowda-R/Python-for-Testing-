@@ -1,0 +1,162 @@
+''' Introduction to Python Programming
+1. What is Python?
+Python is a high-level, interpreted programming language known for its simplicity and readability. It allows developers to write clear programs for both small and large-scale projects. Python is used for:
+
+Web development (e.g., Django, Flask)
+Data Science and Machine Learning (e.g., Pandas, TensorFlow)
+Automation (e.g., scripting tasks)
+Software development and more.
+
+2. Why is Python Popular?
+Easy to learn: Python’s syntax is simple and very close to natural language, making it a great language for beginners.
+Community support: It has a massive community, meaning you'll find lots of tutorials, resources, and libraries.
+Cross-platform: Python works on different operating systems (Windows, macOS, Linux, etc.).
+Versatile: Whether it's web development, data analysis, or automation, Python has libraries for almost everything.
+
+3. Python as an Interpreted Language
+Unlike other compiled languages like C or Java, Python executes the code line by line, which makes debugging easy. Python doesn't require you to compile your code into machine language; the Python interpreter takes care of it.
+
+Benefits of Interpreted Language:
+Easier debugging: Errors are reported line by line.
+Faster development: You can directly run the code without worrying about compiling.
+
+4. Key Features of Python
+Simple Syntax: Easy to read and write, similar to English.
+Interpreted: Python is executed line by line.
+Dynamically Typed: No need to declare variable types explicitly.
+Object-Oriented: Supports OOP (Object-Oriented Programming) like classes and objects.
+Rich Standard Library: Comes with lots of built-in modules and functions.
+
+Variables in Python
+Variables in Python are used to store data values. They are created when you assign a value to them, and you don’t need to declare their type (Python is dynamically typed).
+
+Syntax for Variable Assignment:
+  x = 5  # Assigning an integer value to the variable x
+  y = "Hello"  # Assigning a string value to the variable y
+
+Variable Naming Rules:
+
+Variable names can contain letters (a-z, A-Z), numbers (0-9), and underscores (_).
+Variable names must start with a letter or an underscore.
+Variable names are case-sensitive (Name and name are different).
+
+Example:
+age = 25
+name = "John"
+is_student = True
+
+Data Types in Python
+
+Python has various built-in data types. Some common ones are:
+
+int: For integers (e.g., 1, -3, 100)
+float: For floating-point numbers (e.g., 3.14, -0.001)
+str: For strings (e.g., "Hello", "Python")
+bool: For boolean values (True or False)
+Type Checking:
+You can use the type() function to check the type of a variable.
+
+x = 10
+print(type(x))  # Output: <class 'int'>
+
+ Type Conversion
+Python allows you to convert between data types using functions like int(), float(), str(), etc.
+x = "10"  # x is a string
+y = int(x)  # Convert string to integer
+z = float(y)  # Convert integer to float
+print(z)  # Output: 10.0
+
+ Arithmetic Operators
+Python supports basic arithmetic operations like addition, subtraction, multiplication, division, and more.
+
+Common Operators:
++ (Addition)
+- (Subtraction)
+* (Multiplication)
+/ (Division)
+// (Floor Division)
+% (Modulus)
+** (Exponentiation)
+
+Assigning Values to Multiple Variables
+
+Python allows you to assign values to multiple variables in a single line.
+
+x, y, z = 10, 20, 30  or  x = y = z = 100
+
+Variable Reassignment
+
+You can change the value of a variable at any point in your program.
+x = 5
+print(x)
+x = 10
+print(y)
+
+ Input and Output in Python
+1.1 Input from the User:
+In Python, we use the input() function to take input from the user. The data entered by the user is always received as a string, so if you want to use it as a different data type (e.g., integer or float), you'll need to convert it using type conversion functions like int() or float().
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))  # Convert input to integer
+1.2 Output to the Console:
+The print() function is used to display output to the console. You can use it to display text, variables, or results of expressions.
+
+print("Hello, " + name + "! You are " + str(age) + " years old.")
+You can also use f-strings (formatted string literals) for more readable code:
+
+print(f"Hello, {name}! You are {age} years old.")
+2. String Manipulation
+Strings are sequences of characters. Python provides many useful methods to manipulate strings.
+
+2.1 Common String Operations:
+Concatenation: Joining two or more strings together using the + operator.
+
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)  # Output: "John Doe"
+Repetition: Repeating a string multiple times using the * operator.
+
+greeting = "Hello! " * 3
+print(greeting)  # Output: "Hello! Hello! Hello! "
+2.2 String Methods:
+upper(): Converts a string to uppercase.
+lower(): Converts a string to lowercase.
+strip(): Removes leading and trailing spaces from a string.
+replace(old, new): Replaces a substring with another string.
+message = "  Hello, World!  "
+print(message.strip())  # Output: "Hello, World!"
+print(message.upper())  # Output: "HELLO, WORLD!"
+print(message.replace("World", "Python"))  # Output: "Hello, Python!"
+2.3 Accessing String Characters:
+You can access individual characters in a string using indexing. Python uses zero-based indexing, so the first character has an index of 0.
+
+text = "Python"
+print(text[0])  # Output: P
+print(text[2])  # Output: t
+You can also use negative indexing to start counting from the end of the string.
+
+print(text[-1])  # Output: n
+print(text[-3])  # Output: h
+2.4 Slicing Strings:
+You can extract a portion (substring) of a string using slicing.
+
+text = "Python Programming"
+print(text[0:6])  # Output: Python (extracts from index 0 to 5)
+print(text[:6])  # Output: Python (same as above)
+print(text[7:])  # Output: Programming (from index 7 to the end)
+
+4. Escape Sequences
+Escape sequences are special characters in strings that start with a backslash (\). They are used to represent certain special characters.
+
+Some commonly used escape sequences:
+
+\n: New line
+\t: Tab space
+\\: Backslash
+Example:
+print("Hello\nWorld")  # Output: 
+# Hello
+# World
+
+print("Hello\tPython")  # Output: Hello '''
