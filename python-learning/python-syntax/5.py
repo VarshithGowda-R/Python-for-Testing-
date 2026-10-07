@@ -1,4 +1,4 @@
-# if  eles elif condition
+# if  else elif condition
 
 time = 14
 
@@ -63,6 +63,13 @@ elif daily_routen == 9:
     print("Time to have the Dinner 9Pm")
 else :
     print("It's not a meal time")
-     
 
-    
+# hackerank
+n = int(input("please enter the interger input  "))
+if n % 2 == 1:
+    print("weired")
+elif n % 2 == 0 and 2<=n<=5 or n>=20 :
+      print("not weired")
+elif n % 2 == 0 and 3<=n<=20:
+      print("weired")
+ 
