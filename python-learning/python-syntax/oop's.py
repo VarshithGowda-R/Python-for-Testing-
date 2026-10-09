@@ -66,3 +66,6 @@ my_student1.student_details()
 my_student2.student_details()
 my_student3.student_details()
 my_student4.student_details()
+
+# method call using class name
+Student_information.student_details(my_student1)

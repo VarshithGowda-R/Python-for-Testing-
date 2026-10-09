@@ -66,3 +66,5 @@ my_student1.student_details()
 my_student2.student_details()
 my_student3.student_details()
 my_student4.student_details()
+
+Student_information.student_details(my_student1)
